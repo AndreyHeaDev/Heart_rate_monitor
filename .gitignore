@@ -23,5 +23,5 @@ yarn-error.log*
 # Seting and executing Gulp
 
 # gulpfile.*
-package-lock.*
+# package-lock.*
 # package.*
