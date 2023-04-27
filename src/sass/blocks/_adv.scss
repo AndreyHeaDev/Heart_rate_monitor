@@ -1,0 +1,47 @@
+.adv {
+    padding-top: 69px;
+    min-height: 470px; 
+    background-color: $back-color_1;
+    &__header {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: $font-color_adv;
+    }
+    &__icons {
+        margin-top: 64px;
+        width: 922px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 247px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $font-color_adv;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 37px;
+            // margin-bottom: 19px;
+        }
+        p {
+            margin-top: 26px;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: $font-color_adv;
+        }
+        span {
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: $font-color_adv;
+            a {
+                text-decoration: underline;
+                color: $link-color;                
+            }
+        }
+    }
+}

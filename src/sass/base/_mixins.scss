@@ -1,0 +1,11 @@
+@mixin btn_hover {
+    &:hover {
+        background-color: $tap-color;
+    }    
+}
+
+@mixin btn_no_hover {
+    &:hover {
+        background-color: $main-color;
+    }    
+}

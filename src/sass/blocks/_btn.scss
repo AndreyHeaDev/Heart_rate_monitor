@@ -1,0 +1,29 @@
+.btn {
+    // display: block;
+    // margin: 0 auto;
+    display: inline-flex;   //Выравниваем текст внутри кнопки по центру, задаём тип
+    align-items: center;    //Выравниваем текст внутри кнопки по центру, вертикально по-центру
+    justify-content: center;//Выравниваем текст внутри кнопки по центру, горизонтально по-центру
+    width: 150px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    @include btn_hover;
+  
+    
+    &_promo {
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        @include btn_hover;
+    }
+}
+
+

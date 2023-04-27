@@ -1,0 +1,18 @@
+@import 'base/variables';   /* Подключаем переменные */
+@import 'base/mixins';      /* Подключаем миксины */
+*{
+    font-family: 'Museo Sans Curl', sans-serif;
+}
+
+.container { 
+    max-width: 950px;   /* Ограничиваем ширину 950Px */
+    margin: 0 auto;     /* Выравнивание по центру */    
+}                       /* Глобальный класс применямый вместо 10 столбцов bootstrap.
+ ограничивает экран по ширине. Используем для Flex-вёрстки */
+
+
+@import 'blocks/promo'; /* Подключаем блок promo из файла _promo.scss */
+@import 'blocks/title'; /* Подключаем блок title */
+@import 'blocks/btn';   /* Подключаем кнопки */
+@import 'blocks/adv';   /* Подключаем блок приемущества */
+@import 'blocks/media'; /* Адаптация */

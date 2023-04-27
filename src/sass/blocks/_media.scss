@@ -1,0 +1,62 @@
+@media  only screen and (max-width: 412px) and (orientation: portrait) { 
+        .title {
+            flex-wrap: wrap;
+            /* &__logo {
+                width: 205px;
+                img {
+                    width: 100%;
+                }
+            } */
+        }
+        .promo {
+            background: url(../../img/bg/ferst_bg_412_754.jpg) center (center/cover) no-repeat;
+            &__wrapper {
+                padding: inherit;
+            }
+            &__header {
+                font-size: 37px;
+            }
+            &__subheader {
+                font-size: 20px;
+            }
+        }
+        .adv {
+            padding-top: 42px;
+            &__icons {
+                margin: 0 auto;
+                margin-top: 32px;
+                width: 100vw;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__icon {
+                img {
+                    margin-bottom: 4px;
+                }
+                p {
+                    margin-top: 8px;
+                }
+                span {
+                    line-height: 1.4;
+                }
+            }
+        }
+        .btn {
+            @include btn_no_hover;      /* Отменяеи hover-эффект для мобильных устройств */
+            &_promo {
+                @include btn_no_hover;  /* Отменяеи hover-эффект для мобильных устройств */
+            }
+        }
+    };
+@media  only screen and (max-width: 760px) and (orientation: landscape) { 
+    .promo {
+            max-height: 411px;
+            min-height: 0px;
+            // padding: 20px 0 91px 0;
+            background: url(../../img/bg/ferst_bg_755_412.jpg) center (center/cover) no-repeat;
+            &__wrapper {
+                margin-top: 42px;
+            }
+        }
+        
+    };

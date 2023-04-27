@@ -11,7 +11,8 @@ gulp.task('server', function() {
     browserSync({
         server: {
             baseDir: "src"
-        }
+        },
+        browser: 'chrome'   /* Запускаем в Chrome */
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
@@ -19,7 +20,7 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
