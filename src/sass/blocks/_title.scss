@@ -3,13 +3,14 @@
     justify-content: space-between;
     align-items: center;
     align-items: flex-end;
+    color: #ffffff;
     
     &__official {
         // margin-top: 20px;
         font-size: 12px;
         font-weight: 500;
         // line-height: 1.2;
-        color: #ffffff;
+        // color: #ffffff;
         text-align: center;
         span {
             display: block;
@@ -33,5 +34,21 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+    &_left {
+        font-size: 36px;
+        text-align: left;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        // color: #ffffff;
+    }
+    &_descr {
+        margin-top: 80px;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        // color: #ffffff;
     }
 }
