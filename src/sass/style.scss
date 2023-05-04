@@ -15,6 +15,8 @@
 @import 'blocks/title'; /* Подключаем блок title */
 @import 'blocks/btn';   /* Подключаем кнопки */
 @import 'blocks/adv';   /* Подключаем блок приемущества */
-@import 'blocks/media'; /* Адаптация */
 @import 'blocks/conslt';/* Блок с формой косультации */
 @import 'blocks/forms'; /* Форма консультации */
+@import 'blocks/carousel'; /* Слайдер */
+
+@import 'blocks/media'; /* Адаптация Определяем Последним!!!*/

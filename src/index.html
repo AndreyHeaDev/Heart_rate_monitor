@@ -8,9 +8,12 @@
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> 
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-        <div class="promo"> <!-- Блок с первым экраном -->
+    
+    <body>
+        <section class="promo"> <!-- Блок с первым экраном -->
             <div class="container">
                 <header class="title">
                     <a href="#" class="title__logo">
@@ -53,13 +56,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="adv">    <!-- Наши приемущества -->
+        <section class="adv">    <!-- Наши приемущества -->
             <div class="container">
                 <h2 class="adv__header">НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div class="adv__icons">
-                    <div class="adv__icon"><img src="/icons/ferst/cup_advantages.png" alt="Cup">
+                    <div class="adv__icon"><img src="icons/ferst/cup_advantages.png" alt="Cup">
                         Делимся опытом
                         <p>
                             <span>
@@ -69,7 +72,7 @@
                         </p>
                         
                     </div>
-                    <div class="adv__icon"><img src="/icons/ferst/heart_advantages.png" alt="Heart pulse">
+                    <div class="adv__icon"><img src="icons/ferst/heart_advantages.png" alt="Heart pulse">
                         Заботимся о здоровье
                         <p>
                             <span>
@@ -79,7 +82,7 @@
                         </p>
                         
                     </div>
-                    <div class="adv__icon"><img src="/icons/ferst/shoes_advantages.png" alt="Shoes">
+                    <div class="adv__icon"><img src="icons/ferst/shoes_advantages.png" alt="Shoes">
                         Учим бегать
                         <p>
                             <span>
@@ -94,8 +97,9 @@
                 </div>        
             </div>
             
-        </div>
-        <div class="conslt">
+        </section>
+        
+        <section class="conslt">
             <div class="container">
                 <h2 class="title title_left">
                     Получите бесплатную консультацию </br>
@@ -106,15 +110,34 @@
                     и мы перезвоним вам в течении 10 минут
                 </h2>
                 <form action="#" class="form-feed">
-                    <input name="name" recured placeholder="Ваше имя" type="text">
-                    <input name="name" recured placeholder="Ваше телефон" type="tel">
+                    <input name="name" recured placeholder="Ваше имя*" type="text">
+                    <input name="name" recured maxlenght="14" placeholder="Ваш телефон*" value="+7 900 000 00 00" type="tel">
                     <input name="name" placeholder="Ваше email" type="email">
                     <button class="btn btn_left">заказать кОНСУЛЬТАЦИЮ</button>
 
                 </form>
             </div>
-        </div>
-     <body>
- 
+        </section>
+        
+        <section class="carousel">
+            <div class="container">
+                <div class="carousel_inner">
+                    <div>
+                        <img src="img/slider/slider_rs3gps.png" alt="slaid 1">
+                    </div>
+                    <div>
+                        <img src="img/slider/slider_3polar.png" alt="slaid 2">
+                    </div>
+                    <div>
+                        <img src="img/slider/slaider_m600trio.png" alt="slaid 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>    
     </body>
 </html> 

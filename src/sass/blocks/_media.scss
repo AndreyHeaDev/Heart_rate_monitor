@@ -7,6 +7,9 @@
                     width: 100%;
                 }
             } */
+            &_left {
+                font-size: 30px;
+            }
         }
         .promo {
             background: url(../img/bg/ferst_bg_412_754.jpg) center (center/cover) no-repeat;
@@ -41,11 +44,16 @@
                 }
             }
         }
+
         .btn {
             @include btn_no_hover;      /* Отменяеи hover-эффект для мобильных устройств */
             &_promo {
                 @include btn_no_hover;  /* Отменяеи hover-эффект для мобильных устройств */
             }
+        }
+        .conslt {
+            padding: 100px 5px 92px 5px;
+            background: url(../img/bg/freeConsultation_754_411.jpg) center (center/cover) no-repeat;
         }
     };
 @media  only screen and (max-width: 760px) and (orientation: landscape) { 
