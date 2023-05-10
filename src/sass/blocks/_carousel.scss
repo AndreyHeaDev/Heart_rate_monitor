@@ -2,7 +2,27 @@
     padding: 81px 0;        /* отступ сверху по размеру самого большого img  */
     // background: #ffffff;
     &__inner {
+        position: relative;
         width: 750px;
         margin: 0 auto;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+
+        img {
+            height: 50px;
+            width: 31px;
+            border: none;
+            background-color: #ffffff;
+        }
+    }
+    .slick-next {
+        left: auto;
+        right: -66px;
     }
 }    
