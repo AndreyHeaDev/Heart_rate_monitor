@@ -5,6 +5,7 @@
 }
 
 .container { 
+    position: relative;
     max-width: 950px;   /* Ограничиваем ширину 950Px */
     margin: 0 auto;     /* Выравнивание по центру */    
 }                       /* Глобальный класс применямый вместо 10 столбцов bootstrap.

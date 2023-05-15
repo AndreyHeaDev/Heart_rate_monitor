@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> 
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> // Подключаем Slick-слайдер -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     
@@ -132,12 +134,16 @@
                         <img src="img/slider/slaider_m600trio.png" alt="slaid 3">
                     </div>
                 </div>
+                <button type="button" class="prev"><img src="../icons/slider/arrowLeft.png"></img></button>
+                <button type="button" class="next"><img src="../icons/slider/arrowRight.png"></img></button>
             </div>
         </section>
     
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
+        <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+        <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+        <!-- <script type="text/javascript" src="js/slick.min.js"></script>  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
         <script type="text/javascript" src="js/script.js"></script>    
     </body>
 </html> 

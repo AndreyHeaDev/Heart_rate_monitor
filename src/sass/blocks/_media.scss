@@ -55,6 +55,15 @@
             padding: 100px 5px 92px 5px;
             background: url(../img/bg/freeConsultation_754_411.jpg) center (center/cover) no-repeat;
         }
+
+        .carousel {
+            .prev {
+                display: none;
+            }
+            .next {
+                display: none;
+            }
+        }
     };
 @media  only screen and (max-width: 760px) and (orientation: landscape) { 
     .promo {

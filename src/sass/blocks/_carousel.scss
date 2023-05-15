@@ -6,7 +6,28 @@
         width: 750px;
         margin: 0 auto;
     }
-    .slick-prev, .slick-next {
+    // .slick-prev, .slick-next {       // для Slick-слайдера
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     left: -66px;
+    //     border: none;
+    //     background-color: #fff;
+
+    //     img {
+    //         height: 50px;
+    //         width: 31px;
+    //         border: none;
+    //         background-color: #ffffff;
+    //     }
+    // }
+    
+    // .slick-next {
+    //     left: auto;
+    //     right: -66px;
+    // }
+
+    .prev, .next {       // для tiny-slider-а
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -21,8 +42,15 @@
             background-color: #ffffff;
         }
     }
-    .slick-next {
+    .next {
         left: auto;
         right: -66px;
     }
+
+/*     .tns-item {          // выравниваем картинки слайдер по середине css средствами
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    } */
 }    
