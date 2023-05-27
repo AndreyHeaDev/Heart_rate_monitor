@@ -1,0 +1,108 @@
+.catalog {
+    padding-bottom: 103px;
+    &__tabs {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 0;
+        list-style-type: none;
+        padding: 0;
+        justify-content: center;
+    }
+    &__tab {
+        display: flex;
+        width: 220px;
+        height: 50px;
+        border: 2px solid  #d0d0d0;
+        margin: 0 5px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #6b6b6b;
+        text-align: center;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 10px 10px 10px rgba($color: #000, $alpha: 0.1);
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            background-color: $main-color;
+            border: none;
+            color: #fff;
+        }
+    }
+    &__content {
+        width: 940px;
+        height: 118px;
+        margin-top: 60px;
+        // background-color: #ffffff;
+    }
+    &-item {
+        width: 300px;
+        min-height: 440px;  /*В будущем возможно изменение карточки товар*/
+        padding: 20px 20px 20px 20px;
+        border: 2px solid #e8e8e8;
+        text-align: center;
+        &__img {
+            display: block;     /*для центировки блока*/
+            max-width: 100%;   /*Для заполнения картинкой всего поля в будущем*/
+            height: 200px;
+            margin: 0 auto;     /*Выравнивание img по-центру*/
+        }
+        &__subheader {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #0d0d0d;
+        }
+        &__descr {
+            margin-top: 2px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #0d0d0d;
+        }
+        &__link {
+            display: block;
+            margin-top: 2px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            color: $main-color;
+            // cursor: pointer;
+            &:hover {
+                color: $main-color;     /*Цвет ссылки неи меняется при наведении*/
+            }
+        }
+        hr {
+            background-color: #e8e8e8;
+            margin: 20px 0 20px;
+            border-bottom: none;
+        }
+        &__futor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__prices {
+            text-align: left;
+        }
+        &__oldPrice {
+            font-size: 14px;
+            font-weight: 300;
+            color: #555555;
+            text-decoration: line-through;
+        }
+        &__price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #050505;
+        }
+    }
+}

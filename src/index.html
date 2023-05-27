@@ -9,9 +9,13 @@
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/font.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> // Подключаем Slick-слайдер -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <link rel="stylesheet" href="css/tiny-slider.css">  <!-- // Подключаем tiny-slider -->
+        <!-- <link rel="stylesheet" href="css/tiny-slider.min.css">  // Подключаем tiny-slider -->
+        <link rel="stylesheet" href="css/style.min.css"> 
+        
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"> -->
         <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-        <link rel="stylesheet" href="css/style.min.css">
+        <!-- <link rel="stylesheet" href="https://104.17.25.14/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"><link rel="stylesheet" href="css/style.min.css"> -->
     </head>
     
     <body>
@@ -138,12 +142,48 @@
                 <button type="button" class="next"><img src="../icons/slider/arrowRight.png"></img></button>
             </div>
         </section>
-    
+
+        <section class="catalog">
+            <div class="container">
+                <h2 class="title title_catalog">Каталог пульсометров</h2> <!-- Заголовок секции -->
+                <ul class="catalog__tabs">
+                    <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
+                    <li class="catalog__tab"><div>для бега</div></li>
+                    <li class="catalog__tab"><div>для триатлона</div></li>
+                </ul>
+
+                <div class="catalog__content">
+                    <div class="catalog-item">
+                        <img src="/img/catalog/pulsometr_Nb.png" alt="Pulsometr" class="catalog-item__img">
+                        <div class="catalog-item__subheader">Пульсометр Polar FT1</div>
+                        <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        <hr>
+                        <div class="catalog-item__futor">
+                            <div class="catalog-item__prices">
+                                <div class="catalog-item__oldPrice">4 750 руб.</div>
+                                <div class="catalog-item__price">4 500 руб.</div>
+                            </div>
+                            <button class="btn btn_catalog">КУПИТЬ</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="catalog__content"></div>
+                <div class="catalog__content"></div>
+            </div>
+        </section>
+        <!-- // Подключаем Slick-слайдер -->
         <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
         <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
         <!-- <script type="text/javascript" src="js/slick.min.js"></script>  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        
+        <!-- Подключаем tiny-slider -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
         <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-        <script type="text/javascript" src="js/script.js"></script>    
+        <!-- <script src="https://104.17.25.14/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+            <script type="text/javascript" src="js/tiny-slider.js"></script>    
+            <script type="text/javascript" src="js/script.js"></script>    
     </body>
 </html> 

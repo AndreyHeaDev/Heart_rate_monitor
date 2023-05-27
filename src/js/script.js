@@ -1,11 +1,15 @@
-const slider = tns({      //tiny-slider
+const slider = tns({      
   container: '.carousel__inner',
+  // mode: 'carousel',  //Тип карусели
   items: 1,
   slideBy: 'page',
-  center: true,
-  autoplay: false,
-  controls: false,
-  nav: false,
+  // center: true,           // Расположение по центру в контейнере
+  autoplay: false,        //Отключаем автопроигрывание
+  controls: false,        //удаляем нативные стрелки
+  navPosition: 'bottom', //расположение точек внизу
+  // lazyload: true,        //"ленивая загрузка"
+  // navAsThumbnails: true,  //являются ли точки миниатюрами
+  nav: false,         //Отображение точек
   // gutter: 1,
   // fixedWidth: true,
   // autoWidth: true,
@@ -15,22 +19,25 @@ const slider = tns({      //tiny-slider
   //   '<img src="../icons/slider/arrowRight.png">'   
   // ]
   responsive: {
-    //  412: {
+     412: {
     //   fixedWidth: true,
-    // },
+      edgePadding: 10,
+      gutter: 10
+     },
     640: {
       // autoWidth: true,
       edgePadding: 20,
-      gutter: 20,
-      items: 1
+      gutter: 20
+      // items: 1
     },
     700: {
       // autoWidth: true,
+      edgePadding: 30,
       gutter: 30
     },
     900: {
       // autoWidth: true,
-      items: 1
+      // items: 1
     }
   }
 });

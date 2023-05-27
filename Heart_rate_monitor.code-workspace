@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../LernProject"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Heart_rate_monitor"
+	}
+}
