@@ -12,13 +12,13 @@
  ограничивает экран по ширине. Используем для Flex-вёрстки */
 
 
-@import 'blocks/promo'; /* Подключаем блок promo из файла _promo.scss */
-@import 'blocks/title'; /* Подключаем блок title */
-@import 'blocks/btn';   /* Подключаем кнопки */
-@import 'blocks/adv';   /* Подключаем блок приемущества */
-@import 'blocks/conslt';/* Блок с формой косультации */
-@import 'blocks/forms'; /* Форма консультации */
-@import 'blocks/carousel'; /* Слайдер */
-@import 'blocks/catalog'; /*Каталог товаров*/
+@import 'blocks/promo';     /* Подключаем блок promo из файла _promo.scss */
+@import 'blocks/title';     /* Подключаем блок title */
+@import 'blocks/btn';       /* Подключаем кнопки */
+@import 'blocks/adv';       /* Подключаем блок приемущества */
+@import 'blocks/conslt';    /* Блок с формой косультации */
+@import 'blocks/forms';     /* Форма консультации */
+@import 'blocks/carousel';  /* Слайдер */
+@import 'blocks/catalog';   /*Каталог товаров*/
 
-@import 'blocks/media'; /* Адаптация Определяем Последним!!!*/
+@import 'blocks/media';     /* Адаптация Определяем Последним!!!*/

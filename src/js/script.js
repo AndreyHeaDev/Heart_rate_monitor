@@ -75,4 +75,30 @@ document.querySelector('.next').addEventListener('click', function () {
 //   });
 // });
 
+$(document).ready(function() {
+  $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+    $(this)
+      .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+      .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+  });
+
+  function toggleSlide (item) {
+    $(item).each(function(i) {		        /*перебираем все элементы*/
+      $(this).on('click', function(e)  {		/*при нажатии на выбранную ссылку, вызывает фукцию с аргументом e*/
+          e.preventDefault();		            /*отмена стандартного действия при нажатии на e для e*/
+          $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');  /*toggleClas "тоглит" классы заменяя на противоположны удаляя при наличии и добавляя при отсутствии*/
+          $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active'); /*"тогглим" класс активности для list, одновременно &__content и &__list не могут быть активными*/
+      }) 			
+    })
+  };
+
+  toggleSlide('.catalog-item__link');
+  toggleSlide('.catalog-item__back');
+
+});
+    
+
+    
+
+
 
