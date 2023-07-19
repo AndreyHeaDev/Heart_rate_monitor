@@ -95,6 +95,26 @@ $(document).ready(function() {
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
 
+  //Модальные окна
+
+  $('[data-modal=consultation]').on('click', function(){ //медленное появление затемнения и первого модальногокна
+    $('.fogging, #consultation').fadeIn('slow'); 
+  });
+  $('.modalW__close').on('click', function(){
+    $('.fogging, #consultation, #order, #thanks').fadeOut('slow');
+  });
+
+/*     $('.btn_catalog').on('click',function(){
+        $('.fogging, #order').fadeIn('slow');
+  }); */
+
+  $('.btn_catalog').each(function(i){
+    $(this).on('click', function(){
+      $('#order .modalW__descr').text($('.catalog-item__subheader').eq(i).text());
+      $('.fogging, #order').fadeIn('slow');
+    });
+  });
+
 });
     
 
