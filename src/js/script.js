@@ -115,6 +115,76 @@ $(document).ready(function() {
     });
   });
 
+  //Валидация
+  
+/*   $('#consultation-form').validate();
+ $('#consultation form').validate({
+    rules: {
+      name: {
+        required: true,
+        // text: true,
+        minlength: 2
+      },
+      phone: {
+        required: true,
+        phone: true
+
+      }, 
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Пожалуйста введите имя",
+        minlength: jQuery.validator.format("Должно быть не менее {0}-х символов!")
+      },
+      phone: "Пожалуйста введите телефон",
+      email: {
+        required: "Пожалуйста введите почту",
+        email: "Адрес должен быть в формате name@domain.com"
+      }
+    }
+  }); 
+
+  $('#order form').validate(); */
+
+  function validateForm(form){
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          // text: true,
+          minlength: 2
+        },
+        phone: {
+          required: true,
+          phone: true
+  
+        }, 
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста введите имя",
+          minlength: jQuery.validator.format("Должно быть не менее {0}-х символов!")
+        },
+        phone: "Пожалуйста введите телефон",
+        email: {
+          required: "Пожалуйста введите почту",
+          email: "Адрес должен быть в формате name@domain.com"
+        }
+      }
+    });  
+  };
+
+  validateForm('#consultation-form');
+  validateForm('#consultation form');
+  validateForm('#order form');
 });
     
 
