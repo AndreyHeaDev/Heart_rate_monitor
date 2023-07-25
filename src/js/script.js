@@ -116,8 +116,8 @@ $(document).ready(function() {
   });
 
   //Валидация
-  
-/*   $('#consultation-form').validate();
+
+/*  $('#consultation-form').validate();
  $('#consultation form').validate({
     rules: {
       name: {
@@ -160,7 +160,7 @@ $(document).ready(function() {
         },
         phone: {
           required: true,
-          phone: true
+          // phone: true 
   
         }, 
         email: {
@@ -185,6 +185,8 @@ $(document).ready(function() {
   validateForm('#consultation-form');
   validateForm('#consultation form');
   validateForm('#order form');
+
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
     
 
