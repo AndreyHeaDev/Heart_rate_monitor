@@ -160,7 +160,7 @@ $(document).ready(function() {
         },
         phone: {
           required: true,
-          // phone: true 
+          // phone: true
   
         }, 
         email: {
@@ -187,6 +187,21 @@ $(document).ready(function() {
   validateForm('#order form');
 
   $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+  $('form').submit(function(e){
+    e.preventDefault();         //отменяем стандартное поведение браузера на отсылку данных
+    $.ajax({                    //формирование запроса на сервер                    
+        type: "POST",           //тип запроса на сервер отдаём (?) почту
+        url: "mailer/smart.php", //куда идёт обращение, в этом случае к скрипту smart.php
+        data: $(this).serialize(),   //данные, работаем с выбранным окном (this) и отправляем методом .serialize
+    }).done(function(){          //если успешно выполнено (.done) то выполнить                     
+        $(this).find("input").val(""); //в форме с которой работаем (this), ищем поля (.find("input") и выставляем их в "" (.val(""))                             
+        $('#consultation, #order').fadeOut(); //закрываем все возможные модальные окна
+        $('.fogging, #thanks').fadeIn('slow');//отрываем окно благодарности на фоне затемнения
+        $('form').trigger('reset'); //все формы (form) методом (.trigger()) сбрасываем ('reset')
+    });
+    return false;               //закрываем запрос (?)
+  });
 });
     
 
