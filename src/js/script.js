@@ -202,6 +202,24 @@ $(document).ready(function() {
     });
     return false;               //закрываем запрос (?)
   });
+
+  //Smooth scroll and pageUp
+
+  $(window).scroll(function(){			    //window - объект всё окно, при событии scroll выполнять function
+    if ($(this).scrollTop() > 1600) {		//если текущий объект (this) имеет свойство scrollTop (отступ сверху) более 1600px
+      $('.up_shevron').fadeIn();		        //класс .pageup проявляется
+    } else {
+      $('.up_shevron').fadeOut();		          //класс .pageup скрывается
+    }
+  });
+  
+  // This smooth scroll
+  
+  $("a[href^='#']").click(function(){		//"a[href^="#"]" объект это ссылка с аттрибутом href  начинающимся на "#" при клике выполняется function
+    const _href=$(this).attr("href");		//константе _href присваивается значение аттрибута href из кликнутой ссылки (this)
+    $("html, body").animate({scrollTop:$(_href).offset().top+"px"});	//анимируется html, body вверх (scrollTop) 
+    return false;			//на значение сдвига вверх (.offcet().top) полученное из _html в "px"
+  });
 });
     
 

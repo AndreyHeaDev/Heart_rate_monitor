@@ -1,5 +1,6 @@
 @import 'base/variables';   /* Подключаем переменные */
 @import 'base/mixins';      /* Подключаем миксины */
+@import 'base/animation';   /* Подключаем анимацию */
 *{
     font-family: 'Museo Sans Curl', sans-serif;
 }
@@ -24,4 +25,5 @@
 @import 'blocks/footer';    /*Адрес, телефон, ссылки футер*/
 @import 'blocks/modalW';    /*Модальные окна*/
 
-@import 'blocks/media';     /* Адаптация Определяем Последним!!!*/
+@import 'blocks/media';     /*Адаптация Определяем Последним!!!*/
+@import 'blocks/pageup';    /*Анимация вверх и медленно*/

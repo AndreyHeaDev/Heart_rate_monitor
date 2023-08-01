@@ -43,5 +43,16 @@
                 color: $link-color;                
             }
         }
+        &_animated {
+            // animation: heartbeat 1.5s ease infinite;
+            animation-name: heartBeat;	        //имя применяемой анимации	
+			animation-duration: 1.5s;	        //длительность анимации 1,5 сек
+			animation-timing-function: ease;	//тип воспроизведения. Самая распространённая
+								                // линейная, easy - начинается быстро, замедляется, завершается быстро
+			animation-iteration-count: infinite;//воспроизводиться бесклнечно (infinity)
+			&:hover {
+				animation-play-state: paused;	//при наведении курсора поставить на паузу
+			}
+        }
     }
 }
