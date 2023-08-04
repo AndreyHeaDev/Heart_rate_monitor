@@ -220,6 +220,11 @@ $(document).ready(function() {
     $("html, body").animate({scrollTop:$(_href).offset().top+"px"});	//анимируется html, body вверх (scrollTop) 
     return false;			//на значение сдвига вверх (.offcet().top) полученное из _html в "px"
   });
+  
+  //инициализация wow.js
+
+  new WOW().init();
+
 });
     
 

@@ -26,3 +26,5 @@ yarn-error.log*
 # package-lock.*
 # package.*
 *.psd
+# данные доступа к почтовому серверу не передаём
+smart.php

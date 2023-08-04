@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -8,18 +8,18 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$mail->SMTPDebug = 5;                               // Enable verbose debug output
+//$mail->SMTPDebug = 5;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  					  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '***@yandex.ru';          // Наш логин
-$mail->Password = '***';                 // Наш пароль от ящика
+$mail->Username = 'PostServerForSait@yandex.ru';          // Наш логин
+$mail->Password = 'jdwrmhvhrzehlmcr';                 // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Port = 465;
  
 $mail->setFrom('PostServerForSait@yandex.ru', 'Pulse');   // От кого письмо 
-$mail->addAddress('***@gmail.com');     // Add a recipient
+$mail->addAddress('sim1968sim@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
